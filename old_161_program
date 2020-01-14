@@ -1,0 +1,69 @@
+/**********************************************
+ ** Program Filename: Fortune_teller.cpp
+ ** Author: Elizabeth Ma
+ ** Date: 1/7/2019
+ ** Description: The purpose of this program is to predict the user's fortune using numbers recieved 
+ ** Input: 5 different types of numbers
+ ** Output: The user's fortune based on the numbers entered
+ **********************************************/
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	/* 
+ 	 * using an unsigned will ensure that there is no negative numbers allowed
+	 * the minimum is 0 and the maximum is 65,535
+	 */
+	unsigned short int failed_class;
+
+	/* 
+	 * Using an unsigned will make sure that there are no negatives allowed because
+	 * you cannot unsee a cat.  The mimimum is 0 and maximum is 4,294,967,295.  The maximum
+	 * is kept at a larger number to ensure many cats are account for
+	 */
+	unsigned long int cats;
+
+	/*
+	 * I chose to have an unsigned because similar to the previous variable, you cannot unsee
+	 * a dog. the minimum is 0 and the maximum is 4,294,967,295.  I kept this number large to ensure
+	 * that the user's fortune is awful and that alot of dogs hate them.
+	 */
+	unsigned long long int unloved_dogs;
+	
+	/*
+	 * The unsigned will ensure that you can't have a negative number to finish an assignment
+	 * the minimum is 0 and the maximum is 65,535
+	 */
+	unsigned short int days_to_finish;
+	
+	/*
+ 	 * The short int will allowed for negative numbers because on an assignment you can possibly
+ 	 * get a negative grade if it is that awful.  The minimum is -32,768.  Maximum is 32,767
+ 	 */
+	short int points_on_program;
+
+	cout << "Please enter a number: ";
+	cin >> failed_class;
+	cout << "You will fail " << failed_class << " classes this term. :( " << endl << endl;
+
+	cout << "Please enter a small number: ";
+	cin >> cats;
+	cout << "Please enter a big number: ";
+	cin >> unloved_dogs;
+	cout << '\n';
+	cout << "You will encounter " << cats << " cats, but you will meet " << unloved_dogs << " dogs who will hate you. :( " << endl;
+	cout << '\n';
+
+	cout <<"Please enter a number: ";
+	cin >> days_to_finish;
+	cout <<"Please enter a positive or negative number: ";
+	cin >> points_on_program;
+	cout << '\n';
+
+	cout << "Assignment one will take you " << days_to_finish << " days to finish and the number of points " << "you will receive is " << points_on_program << endl;
+	return 0;
+}
+
